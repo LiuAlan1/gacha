@@ -1,0 +1,124 @@
+body {
+	font-family: Arial;
+}
+
+main {
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	padding: 40px 0px;
+	width: 100%;
+	font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+	padding: 50px;
+}
+div {
+    align-content: center;
+}
+img {
+	max-width:100%;
+	max-height:100%;
+}
+
+.bgcolor {
+    background-color: black;
+}
+
+
+#left {
+	float: left;
+    width: 25%;
+	padding-left: 90px;
+}
+
+#center {
+    margin: auto;
+    width: 40%
+}
+
+#right {
+	float: right;
+	padding-right: 90px;
+    width: 25%;
+}
+
+#start {
+    position: relative;
+    bottom: -100px;
+    right: 0px;
+}
+
+
+#drawbutton {
+    position: relative;
+    right: 0px;
+}
+
+#about {
+    width: 100%;
+}
+
+/* Button */
+.button {
+    background-color: #ccc;
+    color: black;
+    font-size: 36px;
+    padding: 30px;
+    width: 85%;
+    cursor: pointer;
+}
+
+/* Button on hover & focus */
+.button:hover, .button:focus {
+    background-color: #aaa;
+}
+
+#drawicon {
+    width: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+/* nav bar start */
+.topnav {
+    font-family: Valken;
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444444;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    display: block;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: grey;
+    color: white;
+}
+/** nav bar end**/
+
+
