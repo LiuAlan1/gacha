@@ -6,7 +6,7 @@ main {
 	margin: 0 auto;
 	text-align: center;
 	color: white;
-	padding: 40px 0px;
+	padding: 0px 0px;
 	width: 100%;
 	font-size: 20px;
 }
@@ -16,7 +16,7 @@ a {
 }
 
 h1 {
-	padding: 50px;
+	padding: 30px 0px;
 }
 div {
     align-content: center;
@@ -33,7 +33,7 @@ img {
 
 #left {
 	float: left;
-    width: 25%;
+    width: 20%;
 	padding-left: 90px;
 }
 
@@ -45,7 +45,7 @@ img {
 #right {
 	float: right;
 	padding-right: 90px;
-    width: 25%;
+    width: 20%;
 }
 
 #start {
@@ -79,46 +79,30 @@ img {
     background-color: #aaa;
 }
 
-#drawicon {
-    width: 10%;
+.spaced {
     padding-left: 5%;
     padding-right: 5%;
+
+}
+
+.drawicon {
+    width: 10%;
+}
+
+.starticon {
+    width: 15%;
+}
+
+.topicon {
+    width: 7.5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 
-/* nav bar start */
-.topnav {
-    font-family: Valken;
-    display: inline-block;
-    margin: 0;
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    background-color: #444444;
-    position: fixed;
-    top: 0;
-    width: 100%;
+.gacharesult {
+    width: 3%;
 }
-
-.topnav a {
-    display: block;
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.topnav a:hover {
-    cursor: pointer;
-    background-color: white;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: grey;
-    color: white;
-}
-/** nav bar end**/
 
 
