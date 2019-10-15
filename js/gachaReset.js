@@ -1,0 +1,1 @@
+localStorage.setItem("draw_counter", 0);

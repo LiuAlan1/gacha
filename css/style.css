@@ -39,7 +39,7 @@ img {
 
 #center {
     margin: auto;
-    width: 40%
+    width: 40%;
 }
 
 #right {
@@ -100,9 +100,14 @@ img {
     left: 0px;
 }
 
+.gachaResultSpace {
+    margin: auto;
+    width: 33%;
+}
 
-.gacharesult {
-    width: 3%;
+.gachaResult {
+    width: 20.5%;
+    padding: 10px;
 }
 
 

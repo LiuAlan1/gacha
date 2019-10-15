@@ -6,7 +6,8 @@
 
     <title>GACHA</title>
 
-   <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/javascript.js"></script>
 
   </head>
 
@@ -16,13 +17,20 @@
     </div>
 
   	<main>
-  		<div id="center">
+  		<div>
   			<h1>
   				RESULTS
   			</h1>
-  			<p>
-  				
-  			</p>
+        <p>
+          <script type="text/javascript">
+            document.write(cumulativeDraws());
+          </script>
+        </p>
+        <p class="gachaResultSpace">
+          <script type="text/javascript">
+            document.write(printDraws());
+          </script>
+        </p>
 		</div>
   		
   	</main>
