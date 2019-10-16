@@ -1,5 +1,5 @@
 body {
-	font-family: Arial;
+	font-family: Valken;
 }
 
 main {
@@ -82,7 +82,11 @@ img {
 .spaced {
     padding-left: 5%;
     padding-right: 5%;
+}
 
+.profile {
+    width: 30%;
+    margin: auto;
 }
 
 .drawicon {
@@ -100,14 +104,65 @@ img {
     left: 0px;
 }
 
+.drawicon:hover{
+    opacity: 0.5;
+}
+
+.starticon:hover{
+    opacity: 0.5;
+}
+
+.topicon:hover {
+    opacity: 0.5;
+}
+
 .gachaResultSpace {
     margin: auto;
-    width: 33%;
+    width: 50%;
+}
+
+.resultText {
+    text-align: left;
+    padding-left: 12%;
 }
 
 .gachaResult {
-    width: 20.5%;
+    width: 23%;
     padding: 10px;
 }
 
+@media screen and (max-width: 1000px) and (orientation: portrait) {
 
+    main {
+        font-size: 40px;
+    }
+
+    #center {
+        width: 100%;
+    }
+    .drawicon {
+        width: 20%;
+    }
+
+    .topicon {
+        width: 15%;
+    }
+
+    .starticon {
+        width: 30%;
+    }
+
+    .gachaResultSpace {
+        margin: auto;
+        width: 95%;
+    }
+
+    .gachaResult {
+        width: 30%;
+    }
+
+    .resultText {
+        padding-left: 2%;
+        padding-top: 10%;
+    }
+}

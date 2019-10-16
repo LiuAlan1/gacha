@@ -1,7 +1,6 @@
 var drawCount = 0;
 drawCount = parseInt(localStorage.getItem('draw_counter'));
 
-
 var n = localStorage.getItem("DrawResultListCount");
 var drawArray = [
 	localStorage.getItem("DrawResult1"),
@@ -31,8 +30,9 @@ function printDraws() {
 		count--;
 		text += drawArray[count];
 		lbreak++;
-		if (lbreak = 3) {
-			text += '\n';
+		if (lbreak == 3) {
+			lbreak = 0;
+			text += '<br>';
 		}
 	}
 	return text;
