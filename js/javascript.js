@@ -1,5 +1,9 @@
 var drawCount = 0;
 drawCount = parseInt(localStorage.getItem('draw_counter'));
+var drawOneCount = 0;
+drawOneCount = parseInt(localStorage.getItem('draw_one_counter'));
+var drawTenCount = 0;
+drawTenCount = parseInt(localStorage.getItem('draw_ten_counter'));
 
 var n = localStorage.getItem("DrawResultListCount");
 var drawArray = [
@@ -19,6 +23,16 @@ function cumulativeDraws() {
 	var text = 'You have drawn a total of ';
 	text += drawCount;
 	text += ' times.';
+	if (drawCount >= 50){
+		text += '<br><br>';
+		var oneDrawMoney = 5 * drawOneCount;
+		var tenDrawMoney = 30 * drawTenCount;
+		var totalMoney = parseInt(oneDrawMoney) + parseInt(tenDrawMoney);
+		text += 'In another game, you would have spent approximately $';
+		text += totalMoney;
+		text += ' by drawing this many times.';
+	}
+	text += '<br>';
 	return text;
 }
 
@@ -37,60 +51,3 @@ function printDraws() {
 	}
 	return text;
 }
-
-/*
-
-function getImageTag(n) {
-	var count = parseInt(n);
-    var img = '<img src=\"';
-	img += gachaList[count];
-	img += '\" alt=\"';
-	img += gachaListDesc[count];
-	img += '\" title=\"';
-	img += gachaListDesc[count];
-	img += '\" class=\"gachaResult\"/> \n';
-	return img;
-}
-
-
-function printMultiple() {
-	var arrayCount = parseInt(localStorage.getItem("DrawResultList");
-	arrayCount++;
-	var results = '';
-	while (arrayCount > 0) {
-		var resultCount = 'DrawResult' + parseInt(n + 1);
-		parseInt(localStorage.getItem(resultCount);
-		results += getImageTag(arrayCount);
-		arrayCount--;
-	}
-	return results;
-}
-
-*/
-
-/*
-
-function getImageTag(int n) {
-	var img = '<img src=\"';
-	var arrayPos = n+1;
-	var resultCount = 'DrawResult' + arrayPos;
-	img += gachaResults[parseInt(localStorage.getItem(resultCount));];
-	img += '\" alt=\"';
-	img += gachaListDesc[parseInt(localStorage.getItem(resultCount));];
-	img += '\" title=\"';
-	img += gachaListDesc[parseInt(localStorage.getItem(resultCount));];
-	img += '\" class=\"gachaResult\"/> \n';
-	return img;
-}
-
-function printMultiple() {
-	var arrayCount = parseInt(gachaResults.length);
-	arrayCount++;
-	var results = '';
-	while (arrayCount > 0) {
-		results += getImageTag(arrayCount);
-		arrayCount--;
-	}
-	return results;
-}
-*/
