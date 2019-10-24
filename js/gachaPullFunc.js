@@ -70,6 +70,7 @@ var gachaListC = [
     'images/eggs/whiteegg.png',
     'images/eggs/brownegg.png',
     'images/eggs/plasticegg.png',
+    'images/eggs/eggshapedrock.png',
 ];
 
 var gachaListCDesc = [
@@ -82,6 +83,7 @@ var gachaListCDesc = [
     '[C] White Egg: An ordinary white egg.',
     '[C] Brown Egg: An egg who is not that different from a white egg.',
     '[C] Plastic Egg: It has candy inside!',
+    '[C] Egg-Shaped Rock: It\'s a rock.',
 ];
 
 localStorage.setItem("DrawResult1", pullOne());
