@@ -1,6 +1,10 @@
 var drawCount = 0;
 drawCount = parseInt(localStorage.getItem('draw_counter'));
 
+if (drawCount < 200) {
+    location.replace("index.html");
+}
+
 function writePercent() {
 	if (drawCount >= 500) {
 		var text = '<span class="URtext">0.1875%</span><br>';
@@ -30,11 +34,15 @@ function writePercent() {
 		text += '5.8409%<br>';
 		text += '5.8409%<br>';
 		return text;
+	} else {
+		return '';
 	}
 }
 
 function writeRoundWarning() {
 	if (drawCount >= 500) {
 		return '*rates are rounded to the ten thousandth.';
+	} else {
+		return '';
 	}
 }
