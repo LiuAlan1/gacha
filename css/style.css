@@ -34,10 +34,6 @@ img {
 	max-height:100%;
 }
 
-#condition {
-    display: block;
-}
-
 .bgcolor {
     background-color: black;
 }
@@ -73,21 +69,6 @@ img {
 
 #about {
     width: 100%;
-}
-
-/* Button */
-.button {
-    background-color: #ccc;
-    color: black;
-    font-size: 36px;
-    padding: 30px;
-    width: 85%;
-    cursor: pointer;
-}
-
-/* Button on hover & focus */
-.button:hover, .button:focus {
-    background-color: #aaa;
 }
 
 .spaced {
