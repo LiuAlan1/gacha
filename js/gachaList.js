@@ -6,7 +6,7 @@ if (drawCount < 200) {
 }
 
 function writePercent() {
-	if (drawCount >= 500) {
+	if (drawCount >= 300) {
 		var text = '<span class="URtext">0.1875%</span><br>';
 		text += '<span class="URtext">0.5625%</span><br>';
 		text += '<span class="SRtext">2.1428%</span><br>';
@@ -40,7 +40,7 @@ function writePercent() {
 }
 
 function writeRoundWarning() {
-	if (drawCount >= 500) {
+	if (drawCount >= 300) {
 		return '*rates are rounded to the ten thousandth.';
 	} else {
 		return '';
